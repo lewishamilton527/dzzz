@@ -3,34 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Обо мне - Дарын</title>
+    <title>Дарын - Обо мне</title>
 </head>
 <body>
-    <h1>Дарын</h1>
-    
-    <img src="avatar.jpg" alt="Фотография Дарына" width="200">
-    
-    <p>Всем привет! Меня зовут Дарын, мне 15 лет. Я учусь в Республиканской физико-математической школе (РФМШ).</p>
-    
-    <p>Моя главная страсть — это технологии. Я серьезно занимаюсь олимпиадным программированием и создаю различные инженерные проекты. Мне нравится решать сложные задачи, придумывать что-то новое и воплощать идеи в жизнь с помощью кода.</p>
-    
-    <p>В свободное от учебы время я стараюсь поддерживать баланс между умственной и физической активностью. Я очень люблю играть в баскетбол. Кроме того, я большой меломан и люблю слушать музыку, чтобы расслабиться или поймать вдохновение.</p>
-    
-    <h2>Мои интересы</h2>
-    <ul>
-        <li>Баскетбол</li>
-        <li>Программирование и инженерия</li>
-        <li>Музыка</li>
-    </ul>
-    
-    <h2>Мои цели</h2>
-    <ol>
-        <li>Поступить в университет в США на инженера</li>
-        <li>Выиграть Международную олимпиаду по информатике (IOI)</li>
-        <li>Разработать и запустить свой инновационный инженерный проект</li>
-    </ol>
-    
-    <h2>Мои ссылки</h2>
-<p><a href="https://www.instagram.com/daryn.suntyx/" target="_blank">Мой Instagram</a></p>
+
+    <header>
+        <h1>Дарын</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="project.html">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="about">
+            <div class="content-container">
+                <img src="avatar.jpg" alt="Фотография Дарына" width="200">
+                <p>Меня зовут <strong>Дарын</strong>, мне 15 лет, и я учусь в <strong>РФМШ</strong>. Мой путь в IT начался с глубокого интереса к физике и инженерии.</p>
+                <p>На данный момент я обучаюсь на курсах <em>Яндекс Лицея</em> и активно участвую в олимпиадах. Программирование для меня — это способ воплощать инженерные идеи в реальные цифровые продукты.</p>
+                <hr>
+            </div>
+        </article>
+
+        <section id="skills">
+            <h2>Мои навыки</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Категория</th>
+                        <th>Навык / Достижение</th>
+                        <th>Уровень / Награда</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Программирование</td>
+                        <td>Python (Яндекс Лицей)</td>
+                        <td>Продвинутый</td>
+                    </tr>
+                    <tr>
+                        <td>Физика</td>
+                        <td>Республиканская олимпиада</td>
+                        <td>Серебро</td>
+                    </tr>
+                    <tr>
+                        <td>Английский язык</td>
+                        <td>International English Olympiad</td>
+                        <td>1 место</td>
+                    </tr>
+                    <tr>
+                        <td>Веб-разработка</td>
+                        <td>HTML/CSS</td>
+                        <td>Базовый</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Имя:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Согласен на обработку данных</label>
+                </div>
+                <br>
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Дарын. Сделано с помощью кода и тяги к инженерии.</p>
+        <p><a href="https://www.instagram.com/daryn.suntyx/" target="_blank">Instagram</a></p>
+    </footer>
+
 </body>
 </html>
